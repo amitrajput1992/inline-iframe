@@ -3,7 +3,8 @@
   "plugins": [
     [
       "@snowpack/plugin-webpack", {
-        "outputPattern": {"css": "[name].bundle.css", "js": "[name].bundle.js", "assets": "[name]"}
+        "outputPattern": {"css": "[name].bundle.css", "js": "[name].bundle.js", "assets": "[name]"},
+        "htmlMinifierOptions": true
       }
     ],
     "snowpack-plugin-sass"
@@ -13,7 +14,8 @@
   },
   "buildOptions": {
     "clean": true,
-    "metaDir": "static/snowpack"
+    "metaDir": "static/snowpack",
+    "baseUrl": "/inline-iframe"
   },
   "mount": {
     "src": "/dist"
