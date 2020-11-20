@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "bootstrap/dist/css/bootstrap-reboot.min.css": "./bootstrap/dist/css/bootstrap-reboot.min.css",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js"
+  }
+}
